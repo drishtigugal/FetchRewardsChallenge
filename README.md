@@ -3,6 +3,9 @@
 **First: Review Existing Unstructured Data and Diagram a New Structured Relational Data Model**
 
 After reviewing 3 data sample files and identified they were all nested JSON files. To access the data files, I used an iterative approach to flatten these nested JSON files using python. With the help of MySQL Workbench, I generated the ERD for the 3 data files.
+
+ ![image](https://user-images.githubusercontent.com/58273033/122966947-ef93fa00-d357-11eb-8ff7-a2db29070e0d.png)
+
  
 **Second: Write a query that directly answers a predetermined question from a business stakeholder.**
 
@@ -44,8 +47,8 @@ Upon careful review of data, I came across following data issues:
   3.	Majority data missing
 
 3.	To resolve the data quality issues
-  	Inconsistency – There are many columns present in the data that share common information, this increases redundancy within the tables.
-  	Incomplete Information – A few columns like  category and CategoryCode have incomplete information, for example where a category has Bakery mentioned the           relevant categoryCode identifies some whereas others are just Null values.
+  1.	Inconsistency – There are many columns present in the data that share common information, this increases redundancy within the tables.
+  2.	Incomplete Information – A few columns like  category and CategoryCode have incomplete information, for example where a category has Bakery mentioned the           relevant categoryCode identifies some whereas others are just Null values.
  
 4.	What other information would you need to help you optimize the data assets you're trying to create?
   1. Business background – Learn more about domain knowledge, to understand the target variables, establish business questions and define KPI’s for the same.
