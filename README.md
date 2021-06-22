@@ -28,7 +28,8 @@ Furthermore, over half of the columns had 85-90% of missing data. The missing da
   1.	Address business question with limited data : For example, considering rewardsReceiptItemList_userFlaggedBarcode column, it has 935 missing values but since it     is a usserflaggedbarcode values I’m concluding that this column points to the data by the user that directs to some reason why this was flagged.
   2.	Drop Columns: Taking rewardsReceiptItemList_originalMetaBriteItemPrice column for an example, it has only 3 values out of 1119 rows. After carefully reviewing       the relevant columns, I presume only one product is included in the MetaBrite rewards and since it does not answer any business question we can drop all the         relevant columns.
   3.	Use relevant columns to fill the null values: From brands table, we can use category column to fill at least 495 null columns present in categoryCode.
- 
+
+
 **Fourth: Communicate with Stakeholders**
 
 Dear Sir/Madam,
@@ -36,28 +37,32 @@ Dear Sir/Madam,
 I have reviewed the 3 sample data files and was hoping if you could help me find answers for a few of many following questions:
 
 **Questions regarding the data**
+
   1.	What is the source of the data?
   2.	What is the Importance of each column? 
   3.	What are the Business KPI’s that reflect your business questions or priorities?
 
 **Data Quality Issues**
+
 Upon careful review of data, I came across following data issues:
   1.	Poorly formatted data files because of nested JSON files (Nested JSON provides higher clarity in that it decouples objects into different layers, making it         easier to maintain)
   2.	Unclear data distribution
   3.	Majority data missing
 
 **To resolve the data quality issues**
+
   1.	Inconsistency – There are many columns present in the data that share common information, this increases redundancy within the tables.
   2.	Incomplete Information – A few columns like  category and CategoryCode have incomplete information, for example where a category has Bakery mentioned the           relevant categoryCode identifies some whereas others are just Null values.
- 
+ 
 **Information needed to optimize the data assets**
+
   1. Business background – Learn more about domain knowledge, to understand the target variables, establish business questions and define KPI’s for the same.
-  2.	Business use cases – What will the data be used for?
-  3.	Source of the data and data extraction method used.
+  2. Business use cases – What will the data be used for?
+  3. Source of the data and data extraction method used.
   4.	Data relation description between the 3 sample data files, it will help us explore the data from different perspectives and clean the data accordingly.
 
-
 **Performance and Scaling Conerns, with suggestions to solve any issues**
-  A production ready service is scalable and efficient. Performance and scaling concerns arise when,
-    1. Traffic is too high – Increase hardware or processing power, may result into cases of bottlenecks. Can be addressed using horizontal scaling to increase            throughput by adding additional nodes, which is more appropriate than vertical scaling as it may result into resource deficit.
-    2. Scalable data storage – Choosing the wrong database or schema, it is crucial to select, build and maintain database, preferably assign a team to completely        focus on this
+
+A production ready service is scalable and efficient. Performance and scaling concerns arise when,
+  1. Traffic is too high – Increase hardware or processing power, may result into cases of bottlenecks. Can be addressed using horizontal scaling to increase            throughput by adding additional nodes, which is more appropriate than vertical scaling as it may result into resource deficit.
+  2. Scalable data storage – Choosing the wrong database or schema, it is crucial to select, build and maintain database, preferably assign a team to completely          focus on this
