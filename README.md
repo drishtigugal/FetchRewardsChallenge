@@ -35,28 +35,28 @@ Dear Sir/Madam,
 
 I have reviewed the 3 sample data files and was hoping if you could help me find answers for a few of many following questions:
 
-1.	Questions regarding the data
+**Questions regarding the data**
   1.	What is the source of the data?
   2.	What is the Importance of each column? 
   3.	What are the Business KPI’s that reflect your business questions or priorities?
 
-2.	Data Quality Issues
+**Data Quality Issues**
 Upon careful review of data, I came across following data issues:
   1.	Poorly formatted data files because of nested JSON files (Nested JSON provides higher clarity in that it decouples objects into different layers, making it         easier to maintain)
   2.	Unclear data distribution
   3.	Majority data missing
 
-3.	To resolve the data quality issues
+**To resolve the data quality issues**
   1.	Inconsistency – There are many columns present in the data that share common information, this increases redundancy within the tables.
   2.	Incomplete Information – A few columns like  category and CategoryCode have incomplete information, for example where a category has Bakery mentioned the           relevant categoryCode identifies some whereas others are just Null values.
  
-4.	What other information would you need to help you optimize the data assets you're trying to create?
+**Information needed to optimize the data assets**
   1. Business background – Learn more about domain knowledge, to understand the target variables, establish business questions and define KPI’s for the same.
   2.	Business use cases – What will the data be used for?
   3.	Source of the data and data extraction method used.
   4.	Data relation description between the 3 sample data files, it will help us explore the data from different perspectives and clean the data accordingly.
 
-5.	What performance and scaling concerns do you anticipate in production and how do you plan to address them?
+**Performance and Scaling Conerns, with suggestions to solve any issues**
   A production ready service is scalable and efficient. Performance and scaling concerns arise when,
     1. Traffic is too high – Increase hardware or processing power, may result into cases of bottlenecks. Can be addressed using horizontal scaling to increase            throughput by adding additional nodes, which is more appropriate than vertical scaling as it may result into resource deficit.
     2. Scalable data storage – Choosing the wrong database or schema, it is crucial to select, build and maintain database, preferably assign a team to completely        focus on this
