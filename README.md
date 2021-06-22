@@ -56,6 +56,7 @@ Upon careful review of data, I came across following data issues:
   3.	Source of the data and data extraction method used.
   4.	Data relation description between the 3 sample data files, it will help us explore the data from different perspectives and clean the data accordingly.
 
+
 **Performance and Scaling Conerns, with suggestions to solve any issues**
   A production ready service is scalable and efficient. Performance and scaling concerns arise when,
     1. Traffic is too high – Increase hardware or processing power, may result into cases of bottlenecks. Can be addressed using horizontal scaling to increase            throughput by adding additional nodes, which is more appropriate than vertical scaling as it may result into resource deficit.
